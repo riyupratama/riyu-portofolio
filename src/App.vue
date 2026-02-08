@@ -3,6 +3,7 @@
     <Navbar />
     <Hero />
     <About />
+    <Skills />
     <Projects />
     <Product />
     <Contact />
@@ -19,4 +20,5 @@ import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 import Product from './components/Product.vue'
+import Skills from './components/Skills.vue'
 </script>
