@@ -10,6 +10,7 @@
             <!-- Desktop Menu -->
             <div class="space-x-6 hidden md:flex">
                 <button @click="scrollToSection('about')" class="hover:text-primary">About</button>
+                <button @click="scrollToSection('skills')" class="hover:text-primary">Skills</button>
                 <button @click="scrollToSection('projects')" class="hover:text-primary">Projects</button>
                 <button @click="scrollToSection('product')" class="hover:text-primary">Product</button>
                 <button @click="scrollToSection('contact')" class="hover:text-primary">Contact</button>
@@ -31,6 +32,9 @@
            flex flex-col items-center space-y-7 bg-white">
                 <button @click="handleClick('about')" class="w-full py-3 text-2xl text-center hover:text-primary">
                     About
+                </button>
+                <button @click="handleClick('skills')" class="w-full py-3 text-2xl text-center hover:text-primary">
+                    Skills
                 </button>
                 <button @click="handleClick('projects')" class="w-full py-3 text-2xl text-center hover:text-primary">
                     Projects

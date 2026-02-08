@@ -27,24 +27,54 @@
                 If you are interested in learning more about me, please feel free to review my CV for a more detailed
                 overview of my skills, and contact me through the provided contact information.
             </p>
-            <div class="btn-contact mt-5">
-                <a href="#"
-                    class="me-2 inline-block bg-primary text-white px-6 py-3 rounded-xl shadow hover:bg-primaryHover">
-                    See My CV
-                </a>
-                <button @click="scrollToSection('contact')"
-                    class="inline-block bg-primary text-white px-6 py-3 rounded-xl shadow hover:bg-primaryHover">
-                    Contact Me
-                </button>
+            <div class="btn-contact mt-5 grid grid-cols-2">
+                <div class="relative inline-block">
+                    <!-- Tombol -->
+                    <button @click="toggleBubble"
+                        class="bg-primary text-white px-6 py-3 rounded-xl shadow hover:bg-primaryHover">
+                        See My CV
+                    </button>
+
+                    <!-- Bubble dengan segitiga -->
+                    <div v-if="showBubble" class="absolute left-1/2 transform -translate-x-1/2 mt-2 z-50">
+                        <!-- Kotak bubble -->
+                        <div class="relative bg-gray-800 text-white text-sm text-center py-2 px-4 rounded shadow-lg">
+                            Coming Soon...
+                            <!-- Segitiga kecil -->
+                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0 h-0
+                  border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-gray-800">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button @click="scrollToSection('contact')"
+                        class="inline-block bg-primary text-white px-6 py-3 rounded-xl shadow hover:bg-primaryHover">
+                        Contact Me
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
 const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({
         behavior: 'smooth'
     })
+}
+
+const showBubble = ref(false);
+
+function toggleBubble() {
+    showBubble.value = true
+
+    // Auto-hide setelah 2 detik
+    setTimeout(() => {
+        showBubble.value = false
+    }, 2000)
 }
 </script>
