@@ -23,6 +23,22 @@
 <script setup>
 const skills = [
     {
+        name: 'Excel / Spreadsheet',
+        icon: 'fa-regular fa-file-lines text-green-500',
+    },
+    {
+        name: 'Data Analystics',
+        icon: 'fa-solid fa-chart-bar text-blue-500',
+    },
+    {
+        name: 'Document Control',
+        icon: 'fa-solid fa-file text-gray-700',
+    },
+    {
+        name: 'Project Management',
+        icon: 'fa-regular fa-folder-open text-blue-700',
+    },
+    {
         name: 'Vue.js (Front End)',
         icon: 'fa-brands fa-vuejs text-green-500',
     },
@@ -37,22 +53,6 @@ const skills = [
     {
         name: 'MySQL',
         icon: 'fa-solid fa-server text-purple-500'
-    },
-    {
-        name: 'Data Analysis',
-        icon: 'fa-solid fa-chart-bar text-blue-500',
-    },
-    {
-        name: 'Excel / Spreadsheet',
-        icon: 'fa-regular fa-file-lines text-green-500',
-    },
-    {
-        name: 'Project Management',
-        icon: 'fa-regular fa-folder-open text-gray-700',
-    },
-    {
-        name: 'Document management',
-        icon: 'fa-solid fa-file text-blue-700',
-    },
+    }
 ]
 </script>

@@ -5,7 +5,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/riyu-portofolio/',   // <-- tambahkan ini
+  base: '/',   // <-- tambahkan ini
   plugins: [
     vue(),
     vueDevTools(),
