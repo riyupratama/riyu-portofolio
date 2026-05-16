@@ -6,8 +6,8 @@
                     Hi, I'm <span class="text-primary">Riyu</span>
                 </h2>
                 <p class="text-lg mb-6">
-                    I'm a data analyst, but I can also work on front-end and back-end development.
-                    Want to know more about me?
+                    I’m a Data Analyst who usually processes and analyzes data using Excel or spreadsheets. I can also
+                    work on front-end and back-end development. Want to know more about me?
                 </p>
                 <button @click="scrollToSection('about')"
                     class="inline-block bg-primary text-white px-6 py-3 rounded-xl shadow hover:bg-primaryHover">
@@ -15,14 +15,14 @@
                 </button>
             </div>
             <div class="flex justify-center">
-                <img src="/edit.png" class="d-none">
+                <img :src="profileImg" class="d-none w-50 h-50">
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
-import profileImg from '@/assets/img/edit.png'
+import profileImg from '@/assets/img/profile.png'
 
 const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({
