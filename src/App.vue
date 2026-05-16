@@ -6,6 +6,7 @@
     <Skills />
     <Projects />
     <Product />
+    <DummyProjects />
     <Contact />
     <Footer />
   </div>
@@ -19,6 +20,7 @@ import About from './components/About.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
-import Product from './components/Product.vue'
+import DummyProjects from './components/DummyProjects.vue'
 import Skills from './components/Skills.vue'
+import Product from './components/Product.vue'
 </script>
