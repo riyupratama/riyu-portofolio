@@ -2,8 +2,8 @@
     <section id="about" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h3 class="text-3xl font-bold mb-6">About Me</h3>
-            <p class="text-gray-600 leading-relaxed">
-                Currently, I work as a Project Manager.
+            <p class="text-gray-600 leading-relaxed text-xl">
+                Currently, I work as a Project Leader.
                 I am accustomed to coordinating teams to ensure that tasks are completed according to targets. I also
                 monitor project progress closely, allowing me to understand how the project is running, from the team’s
                 condition to on-site situations. <br><br>
@@ -15,17 +15,18 @@
 
                 <b>Why can I work in front-end and back-end development?</b> <br><br>
 
-                In the past, I aspired to become a web programmer. However, circumstances led me down a different path.
-                At that time, my technical skills were still limited, so I joined a company where my initial
-                responsibility was converting documents from hardcopy to softcopy. <br><br>
+                In the past, I aspired to become a web programmer. However, circumstances initially led me down a
+                different path. At that time, my technical skills were still limited, so I joined a company where my
+                primary responsibility was converting hardcopy documents into softcopy. <br><br>
 
-                Through this experience, I began to understand how to manage data properly using Excel. One of the Excel
-                features I use most frequently is lookup functions, which helped me develop strong data-handling and
-                analytical skills. <br><br>
+                Through this experience, I began to understand how to manage data properly using Excel. Frequently using
+                features like lookup functions helped me develop strong data-handling and analytical skills. However, my
+                passion for web development never faded. I continuously honed my programming skills alongside my daily
+                tasks, which is how I eventually mastered both front-end and back-end development. <br><br>
 
-                This is a brief overview of my background.
-                If you are interested in learning more about me, please feel free to review my CV for a more detailed
-                overview of my skills, and contact me through the provided contact information.
+                This unique journey has made me not only a capable developer but also a meticulous data handler. If you
+                are interested in learning more about me, please feel free to review my CV for a more detailed overview
+                of my skills, and contact me through the provided information.
             </p>
             <div class="btn-contact mt-5 grid grid-cols-2">
                 <div class="relative inline-block">

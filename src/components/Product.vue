@@ -24,7 +24,7 @@
                         <div>
                             <h3 class="text-lg font-semibold text-gray-900">{{ product.title }}</h3>
 
-                            <p class="mt-1 text-gray-700">{{ product.desc }}</p>
+                            <p class="mt-1 text-gray-700 text-lg">{{ product.desc }}</p>
                         </div>
                     </div>
                 </div>

@@ -2,8 +2,8 @@
     <section id="contact" class="py-20 bg-gray-100">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h3 class="text-3xl font-bold mb-6">Contact</h3>
-            <p class="text-gray-600 mb-6">Are you interested in this exclusive offer? Feel free to contact me
-                immediately to seize the best opportunity.</p>
+            <p class="text-gray-600 mb-6">Looking for professional data entry or other services with the best results?
+                Contacting me is the right decision.</p>
             <div class="space-x-4">
                 <a href="mailto:riyurahmatpratama@gmail.com"
                     class="px-6 py-3 bg-primary text-white rounded-xl hover:bg-primaryHover">Email</a>

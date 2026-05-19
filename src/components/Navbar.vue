@@ -3,9 +3,11 @@
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
             <!-- Logo / Name -->
-            <h1 @click="scrollToSection('home')" class="font-bold text-xl hover:text-primary cursor-pointer">
+            <a @click="scrollToSection('home')"
+                class="font-bold text-xl hover:text-primary cursor-pointer flex items-center space-x-2">
+                <img src="/favicon/favicon-32x32.png">
                 Riyu R Pratama
-            </h1>
+            </a>
 
             <!-- Desktop Menu -->
             <div class="space-x-6 hidden md:flex">

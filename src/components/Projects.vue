@@ -1,12 +1,19 @@
 <template>
     <section id="projects" class="py-20 bg-gray-100">
         <div class="max-w-6xl mx-auto px-6">
-            <h3 class="text-3xl font-bold text-center mb-12">Projects</h3>
+            <h3 class="text-3xl font-bold text-center mb-3">Projects</h3>
+            <p class="text-gray-600 text-center mb-12 text-lg">Here are some of my best projects:</p>
             <div class="grid md:grid-cols-3 gap-8">
                 <div v-for="project in projects" :key="project.id"
                     class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
                     <h4 class="font-semibold text-xl mb-2">{{ project.title }}</h4>
-                    <p class="text-gray-600 mb-4">{{ project.desc }}</p>
+                    <div class="relative my-6">
+                        <div class="h-px bg-gray-300"></div>
+                        <div
+                            class="absolute inset-x-0 top-1/2 h-2 -translate-y-1/2 bg-gray-300 opacity-30 blur-md -z-10">
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-lg mb-4">{{ project.desc }}</p>
                 </div>
             </div>
         </div>
