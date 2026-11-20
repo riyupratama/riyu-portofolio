@@ -30,23 +30,10 @@
             </p>
             <div class="btn-contact mt-5 grid grid-cols-2">
                 <div class="relative inline-block">
-                    <!-- Tombol -->
-                    <button @click="toggleBubble"
-                        class="bg-primary text-white px-6 py-3 rounded-xl shadow hover:bg-primaryHover">
+                    <button @click="showCv = true"
+                        class="inline-block bg-primary text-white px-6 py-3 rounded-xl shadow hover:bg-primaryHover">
                         See My CV
                     </button>
-
-                    <!-- Bubble dengan segitiga -->
-                    <div v-if="showBubble" class="absolute left-1/2 transform -translate-x-1/2 mt-2 z-50">
-                        <!-- Kotak bubble -->
-                        <div class="relative bg-gray-800 text-white text-sm text-center py-2 px-4 rounded shadow-lg">
-                            Coming Soon...
-                            <!-- Segitiga kecil -->
-                            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0 h-0
-                  border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-gray-800">
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div>
                     <button @click="scrollToSection('contact')"
@@ -57,25 +44,32 @@
             </div>
         </div>
     </section>
+
+    <div v-if="showCv" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
+        @click.self="showCv = false" @keydown.esc="showCv = false" role="dialog" aria-modal="true"
+        aria-label="CV Riyu Rahmat Pratama">
+        <div class="flex h-[90vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-white shadow-xl">
+            <div class="flex items-center justify-between border-b px-4 py-3">
+                <h4 class="font-semibold">My CV</h4>
+                <button @click="showCv = false" aria-label="Close CV"
+                    class="rounded px-3 py-1 text-gray-700 hover:bg-gray-100">
+                    Close
+                </button>
+            </div>
+            <iframe :src="cvUrl" title="CV Riyu Rahmat Pratama" class="min-h-0 flex-1 w-full"></iframe>
+        </div>
+    </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
+import cvUrl from '@/assets/items/my-cv.pdf'
+
+const showCv = ref(false)
 
 const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({
         behavior: 'smooth'
     })
-}
-
-const showBubble = ref(false);
-
-function toggleBubble() {
-    showBubble.value = true
-
-    // Auto-hide setelah 2 detik
-    setTimeout(() => {
-        showBubble.value = false
-    }, 2000)
 }
 </script>
