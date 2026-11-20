@@ -22,7 +22,7 @@
 
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faFileLines, faChartBar, faFile, faDatabase, faTerminal, faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons'
+import { faFileLines, faChartBar, faFile, faDatabase, faTerminal, faWandMagicSparkles, faChartPie } from '@fortawesome/free-solid-svg-icons'
 import { faFolderOpen } from '@fortawesome/free-regular-svg-icons'
 import { faVuejs, faLaravel, faJs, faPython } from '@fortawesome/free-brands-svg-icons'
 
@@ -81,6 +81,11 @@ const skills = [
         name: 'Prompt Engineering',
         icon: faWandMagicSparkles,
         color: 'text-purple-500',
+    },
+    {
+        name: 'Data Visualization',
+        icon: faChartPie,
+        color: 'text-indigo-500',
     }
 ]
 </script>
